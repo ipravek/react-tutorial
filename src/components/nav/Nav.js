@@ -1,18 +1,19 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const nav = {
-  height: '50px',
-  backgroundColor: '#0b0b0b',
-  color: 'white',    
-  display: 'flex',
-}
+  height: "50px",
+  backgroundColor: "#0b0b0b",
+  color: "white",
+  display: "flex",
+};
 
 const logo = {
-  display: 'flex',
-  alignItems: 'center',
-  padding: '0 20px',
-  cursor: 'pointer'
-}
+  display: "flex",
+  alignItems: "center",
+  padding: "0 20px",
+  cursor: "pointer",
+};
 
 export const Nav = () => {
   return (
@@ -23,5 +24,5 @@ export const Nav = () => {
         </div>
       </nav>
     </div>
-  )
-}
+  );
+};
