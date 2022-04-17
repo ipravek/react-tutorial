@@ -20,19 +20,19 @@ export const Card = (props) => {
   return (
     <div>
       <div className="card" style={card}>
-        <h1>{props.title}</h1>
+        <h1>{props.data.title}</h1>
         <div className="bar" style={bar}></div>
-        <p>{props.body}</p>
-        <p>{props.data.welcome}</p>
+        <h4>{props.data.welcome}</h4>
+        <p>{props.data.body}</p>
         <p>
-          <Button name="Click Me" onClick={buttonInfo} />
-        </p>
-        <p>
-          <ul>
+          <ul style={{listStyleType: 'none', display: 'flex', gap: 20, margin: '10px 0'}}>
             {props.data.numbers.map((x) =>
               <li>{x}</li>
             )}
           </ul>
+        </p>
+        <p>
+          <Button name="Click Me" onClick={buttonInfo} />
         </p>
       </div>
     </div>

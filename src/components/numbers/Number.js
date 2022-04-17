@@ -48,10 +48,10 @@ function Number(props) {
   return (
     <>
       {props.numbers.map((n) => {
-        if (n % 2 == 0) {
-          return <p style={evenStyle}> {n} </p>;
-        } else if (isPrime(n)) {
+        if (isPrime(n)) {
           return <p style={primeStyle}> {n} </p>;
+        } else if (n % 2 == 0) {
+          return <p style={evenStyle}> {n} </p>;
         } else {
           return <p style={oddStyle}> {n} </p>;
         }
