@@ -19,6 +19,11 @@ export default class Clscomponent extends Component {
         fontSize: '1.5rem',
         fontWeight: 'bolder',
         margin: '10px 10px 0 0',
+        border: 'none',
+        backgroundColor: 'black',
+        color: 'white',
+        borderRadius: 4,
+        cursor: 'pointer',
       },
 
       heading: {

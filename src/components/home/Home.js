@@ -2,12 +2,25 @@ import { Card } from "../card/Card";
 import Detail from "../detail/Detail";
 import Number from "../numbers/Number";
 import Clscomponent from "../others/Clscomponent";
+import Conditionalrender from "../others/Conditionalrender";
+import Events from '../events/Events';
+import Forms from '../forms/Forms';
 
 const numbers = {
   display: "flex",
   justifyContent: "center",
   flexWrap: "wrap",
 };
+
+const style = {
+  events: {
+    height: '100vh'
+  },
+
+  forms: {
+    height: '100vh'
+  }
+}
 
 const data = {
   name: "Adolf Hitler",
@@ -44,6 +57,17 @@ const Home = () => {
         <div className="class-component">
           <h1>Class Components</h1>
           <Clscomponent data={data} />
+        </div>
+        <hr style={{margin: '50px 0px'}}/>
+        <div className="conditional">
+          <h1>Conditional Render</h1>
+          <Conditionalrender />
+        </div>
+        <div className="events" style={style.events}>
+         <Events />
+        </div>
+        <div className="forms" style={style.forms}>
+          <Forms />
         </div>
       </div>
     </>
